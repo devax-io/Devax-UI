@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./assets/fontIcon/devax-icon/css/devax.css";
 import Main from "./Main/Main";
 
 ReactDOM.render(

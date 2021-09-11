@@ -15,6 +15,8 @@
   --lightGrreen: #1ee406;
   --lightYellow: #fff6abf2;
   --activeText: #6262a0;
+  --red: #d73e36;
+  --gray: #949494;
 
 }
 
@@ -46,6 +48,22 @@ html,body{
   font-size: 1.7vw;
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-100 {
+  font-weight: 100;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.text-color-gray {
+  color: var(--gray);
+}
 
 .flex{
   display: -webkit-box;
@@ -217,6 +235,9 @@ html,body{
 .mb-05{
   margin-bottom: 0.5vh
 }
+.mb-1{
+  margin-bottom: 1vh
+}
 .mb-3{
   margin-bottom: 3vh;
 }
@@ -243,6 +264,22 @@ html,body{
 .px-3{
   padding-right: 3vw;
   padding-left: 3vw;
+}
+.px-4{
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+.px-5{
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+.px-6{
+  padding-right: 6vw;
+  padding-left: 6vw;
+}
+.px-7{
+  padding-right: 7vw;
+  padding-left: 7vw;
 }
 .py-1{
   padding-top: 1vh;
@@ -324,9 +361,25 @@ html,body{
   margin-right: 1vw;
   margin-left: 1vw;
 }
+.mx-7{
+  margin-right: 7vw;
+  margin-left: 7vw;
+}
 .my-2{
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+.my-3{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.my-4{
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+.my-5{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .my-05{
   margin-top: 0.5vh;
@@ -352,8 +405,8 @@ html,body{
 
 .button{
   border: none;
-  border-radius: 7px;
-  font-family: Calibri serif;
+  border-radius: 5px;
+  font-family: Calibri , serif !important;
   font-size: 1.1vw;
   /*color: #f2f2f2;*/
   cursor: pointer;

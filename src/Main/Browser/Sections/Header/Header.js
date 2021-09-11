@@ -6,7 +6,7 @@ import classes from "./Header.module.css";
 const Header = (props) => {
 
     return (
-        <div className={`container ${classes.container} row jc-around ai-center`}>
+        <div className={`container ${classes.container} row jc-between ai-center px-7`}>
             <div className={`row`}>
                 <span>DeVax</span>
             </div>

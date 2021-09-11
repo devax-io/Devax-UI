@@ -3,4 +3,8 @@
     background-color: #eef3f9;
     position: fixed;
     bottom: 0;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 600px 1200px;
+    /*background-color: var(--mainContent);*/
 }
