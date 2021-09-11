@@ -14,6 +14,7 @@
   --dark: #242633fa;
   --lightGrreen: #1ee406;
   --lightYellow: #fff6abf2;
+  --activeText: #6262a0;
 
 }
 
@@ -30,7 +31,7 @@ html,body{
   height: 100%;
   font-family: Calibri , serif !important;
   font-weight: 400;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   line-height: 4.5vh;
   -webkit-box-sizing: border-box;
   direction: ltr;
@@ -330,6 +331,22 @@ html,body{
 .my-05{
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
+}
+
+
+
+.hover-text:hover {
+  color: var(--activeText);
+}
+.hover-underline:hover{
+  text-decoration: underline;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 

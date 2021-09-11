@@ -1,0 +1,7 @@
+.container{
+    height: 10vh;
+    background-color: #f6f9fc;
+    position: fixed;
+    top: 0;
+    box-shadow: 6px -6px 14px #d6d6d6, -6px 6px 14px #f2f2f2;
+}
