@@ -13,10 +13,17 @@
   --orange: #ff8124;
   --dark: #242633fa;
   --lightGrreen: #1ee406;
+  --darkGreen: #0f846c;
+  --miloGreen: #c7fbf5;
   --lightYellow: #fff6abf2;
   --activeText: #6262a0;
   --red: #d73e36;
   --gray: #949494;
+  --lightGray: #ffffff8a;
+
+  --nilBlue: #1d47f9;
+  --mediumpurple: #0f49dc3b;
+
 
 }
 
@@ -53,6 +60,9 @@ html,body{
 }
 .font-weight-300 {
   font-weight: 300;
+}
+.font-weight-200 {
+  font-weight: 200;
 }
 .font-weight-100 {
   font-weight: 100;
@@ -138,6 +148,16 @@ html,body{
   -webkit-box-flex: 0.8;
   -ms-flex: 0.8;
   flex: 0.8;
+}
+.col-32{
+  -webkit-box-flex: 0.32;
+  -ms-flex: 0.32;
+  flex: 0.32;
+}
+.col-33{
+  -webkit-box-flex: 0.33;
+  -ms-flex: 0.33;
+  flex: 0.33;
 }
 .col-35{
   -webkit-box-flex: 0.35;
@@ -349,6 +369,9 @@ html,body{
 .mt-2{
   margin-top: 2vh;
 }
+.mt-3{
+  margin-top: 3vh;
+}
 .mx-05{
   margin-right: 0.5vw;
   margin-left: 0.5vw;
@@ -386,6 +409,41 @@ html,body{
   margin-bottom: 0.5vh;
 }
 
+.text-center{
+  text-align: center;
+}
+
+
+table {
+  width: 100%;
+  max-height: 100%;
+}
+tr {
+  position: relative;
+  line-height: 5vh;
+}
+
+.striped tr:nth-child(even) td {
+  background-color: var(--lightGray);
+  -webkit-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: normal;
+  background-color: var(--mediumpurple);
+  line-height: 5.5vh;
+}
+
+.th-border-y th {
+  border-top: 0.1vh solid var(--mediumpurple);
+  border-bottom: 0.1vh solid var(--mediumpurple);
+}
 
 
 .hover-text:hover {

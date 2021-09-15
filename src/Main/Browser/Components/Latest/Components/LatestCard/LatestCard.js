@@ -1,12 +1,13 @@
 import React, {Fragment, useEffect, useState} from "react";
 import classes from "./LatestCard.module.css";
 import Button from "../../../../../../Components/Button/Button";
-
+import LatestTable from "../LatestTable/LatestTable";
 
 
 const LatestCard = (props) => {
 
-    const {title , } = props
+    const {title , tableData} = props
+
 
     return (
         <div className={`container ${classes.container}`}>
@@ -14,7 +15,7 @@ const LatestCard = (props) => {
                 {title}
             </div>
             <div className={`${classes.content}`}>
-
+                <LatestTable data={tableData}/>
             </div>
             <div className={`${classes.footer} flex jc-center ai-center`}>
                 <Button

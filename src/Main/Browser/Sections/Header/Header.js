@@ -1,5 +1,6 @@
 import React, {Fragment, useEffect, useState} from "react";
 import classes from "./Header.module.css";
+import {images} from "../../../../assets/images/images";
 
 
 
@@ -8,7 +9,7 @@ const Header = (props) => {
     return (
         <div className={`container ${classes.container} row jc-between ai-center px-7`}>
             <div className={`row`}>
-                <span>DeVax</span>
+                <img className={`${classes.thisImage}`} src={images.DeVaxLOGO2Blue} alt="DeVaxLOGO2Blue"/>
             </div>
             <div className={`row font-size-sm`}>
                 <span className={`mx-1 hover-text cursor-pointer`}>Home</span>

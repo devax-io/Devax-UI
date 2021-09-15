@@ -1,0 +1,9 @@
+.container{
+    font-size: 5vw;
+    display: flex;
+    top: 0;
+    padding: 0 7vw;
+    bottom: 0;
+    position: absolute;
+    font-family: Calibri , serif !important;
+}
