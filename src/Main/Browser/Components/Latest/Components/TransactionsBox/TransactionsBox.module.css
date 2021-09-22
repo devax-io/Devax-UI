@@ -1,0 +1,20 @@
+.container{
+    background-color: #68687580;
+    /* width: 90%;*/
+    height: 10vh;
+    border-radius: 4px;
+}
+.container:first-child{
+    margin-top: 0 !important;
+}
+.icon{
+    width: 20%;
+    /*background-color: #ff8124;*/
+}
+.icon img{
+    width: 3vw;
+}
+.content{
+    width: 80%;
+    /*background-color: #1ee406;*/
+}

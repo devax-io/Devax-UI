@@ -1,0 +1,30 @@
+.container {
+    background-color: #ffc69080;
+   /* width: 90%;*/
+
+    border-radius: 4px;
+}
+.container:first-child{
+    margin-top: 0 !important;
+}
+.icon{
+    width: 20%;
+    /*background-color: #ff8124;*/
+}
+.icon img{
+    width: 3vw;
+}
+.content{
+    width: 80%;
+    /*background-color: #1ee406;*/
+}
+.thisButton{
+    height: 5vh;
+    padding: 0 1.5vw;
+    background-color: rgb(0 0 0 / 93%);
+    color: #fbfeff;
+    border-radius: 55px;
+}
+.navbar{
+    border-top: 1px dotted #333333;
+}

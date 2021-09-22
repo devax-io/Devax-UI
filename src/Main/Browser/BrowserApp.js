@@ -6,8 +6,8 @@ import Body from "./Sections/Body/Body";
 
 const BrowserApp = (props) => {
 
-    return (
-        <div className={`container`}>
+
+    return (<div className={`container`}>
             <Header/>
             <Body/>
         </div>

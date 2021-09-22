@@ -48,6 +48,9 @@ html,body{
   /*color: var(--white);*/
 }
 
+.font-size-sm-mini{
+  font-size: 1.15vw;
+}
 .font-size-sm{
   font-size: 1.3vw;
 }
@@ -347,6 +350,9 @@ html,body{
 }
 .pr-05{
   padding-right: 0.5vw;
+}
+.pr-1{
+  padding-right: 1vw;
 }
 .pt-1{
   padding-top: 1vh;

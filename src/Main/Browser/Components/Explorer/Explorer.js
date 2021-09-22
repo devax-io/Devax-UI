@@ -24,7 +24,7 @@
                     />
                 </div>
 
-                <img className={`${classes.thisImage}`} src={images.vax} alt="vax"/>
+                <img className={`${classes.thisImage}`} src={images.devaxExp} alt="vax"/>
             </div>
         );
     };
