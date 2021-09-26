@@ -11,7 +11,7 @@ const TransactionsBox = (props) => {
     const {data} = props
 
     return (
-        <div className={`container ${classes.container} row my-2`}>
+        <div className={`container ${classes.container} row`}>
             <div className={`${classes.icon} flex jc-center ai-center`}>
                 <img src={images.recurringSubscription} alt="cube"/>
             </div>

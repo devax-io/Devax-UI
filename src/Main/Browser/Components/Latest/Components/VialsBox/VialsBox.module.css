@@ -1,8 +1,9 @@
 .container{
-    background-color: #68687580;
+    background-color: #fbf8f6cc;
     /* width: 90%;*/
+    border-bottom: 1px solid;
     height: 10vh;
-    border-radius: 4px;
+   /* border-radius: 4px;*/
 }
 .container:first-child{
     margin-top: 0 !important;

@@ -6,6 +6,7 @@ import {getGeneral} from "../../../../Api/General";
 
 
 
+
 const Overview = (props) => {
 
     const [general , setGeneral] = useState({
@@ -34,14 +35,20 @@ const Overview = (props) => {
 
 
     return (
-        <div className={`container flex jc-center ai-center ${classes.container} my-5`}>
-            <div className={`${classes.content} py-2 row`}>
-                <Card icon={images.vaccine} title="Total Bought Vac" amount={general.totalVials}/>
-                <Card icon={images.people} title="Total Vaccinated People" amount="0"/>
-                <Card icon={images.payrollSalary} title="Total Raise" amount="0"/>
-                <Card icon={images.immunity} title="Total Injections" amount={general.totalInjections}/>
-            </div>
+        <div className={`container  flex jc-end ai-center ${classes.container} my-5 px-7 py-2`}>
 
+
+
+            <div className={`${classes.content} px-1 py-2`}>
+                <div className={`row`}>
+                    <Card icon={images.vaccine} title="Total Bought Vac" amount={general.totalVials}/>
+                    <Card icon={images.people} title="Total Vaccinated People" amount="0"/>
+                </div>
+                <div className={`row`}>
+                    <Card icon={images.payrollSalary} title="Total Raise" amount="0"/>
+                    <Card icon={images.immunity} title="Total Injections" amount={general.totalInjections}/>
+                </div>
+            </div>
         </div>
     );
 };

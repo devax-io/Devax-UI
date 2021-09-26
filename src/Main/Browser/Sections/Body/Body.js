@@ -7,26 +7,52 @@
     import Latest from "../../Components/Latest/Latest";
     import {getAccount} from "../../../../Api/Accounts";
     import {getLots} from "../../../../Api/Lots";
-    
-    
-    
-    
-    
-    const Body = (props) => {
-    
+    import Description from "../../Components/Description/Description";
+    import {Redirect, Route, Switch} from "react-router-dom";
+    import * as Routes from "./../../../../Routes/Routes";
 
-    
-    
+
+
+
+
+    const Body = (props) => {
+
+
+
+
         return (
-            <div className={`container ${classes.container}`}
-                 style={{backgroundImage: `url("${images.landing_lightning}")`}}>
+            <div className={`container ${classes.container}`}>
+                <div className={`${classes.wrapper}`}/>
                 <ScrollBar>
-                    <Explorer/>
-                    <Overview/>
-                    <Latest/>
+
+                    <Switch>
+                        <Route exact path={Routes.Home}>
+                            <Overview/>
+                        </Route>
+                        <Route exact path={Routes.Explorer}>
+                            <Latest/>
+                        </Route>
+
+                        <Route path="*">
+                            <Redirect
+                                to={{
+                                    pathname: `${Routes.Home}`,
+                                }}
+                            />
+                        </Route>
+                    </Switch>
+
+                    {/*<Explorer/>*/}
+                    {/*<div className={`row  px-7`} style={{height: "90vh"}}>
+                        <Description/>
+
+                    </div>*/}
+
+
+
                 </ScrollBar>
             </div>
         );
     };
-    
+
     export default Body;

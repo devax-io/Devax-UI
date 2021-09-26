@@ -13,6 +13,11 @@ import devaxExp from "./images-src/devaxExp.svg";
 import homeopathicMedicine from "./images-src/homeopathicMedicine.svg";
 import recurringSubscription from "./images-src/recurringSubscription.svg";
 import emptyBox from "./images-src/emptyBox.svg";
+import covidunsplash from "./images-src/covidunsplash.jpg";
+import devaxbg from "./images-src/devaxbg.jpg";
+import devaxfill from "./images-src/devaxfill.svg";
+import devaxbgg from "./images-src/devaxbgg.png";
+import devaxMainBg from "./images-src/devaxMainBg.png";
 
 export const  images = {
     'landing_lightning' : landing_lightning,
@@ -30,5 +35,10 @@ export const  images = {
     'homeopathicMedicine' : homeopathicMedicine,
     'recurringSubscription' : recurringSubscription,
     'emptyBox' : emptyBox,
+    'covidunsplash' : covidunsplash,
+    'devaxbg' : devaxbg,
+    'devaxfill' : devaxfill,
+    'devaxbgg' : devaxbgg,
+    'devaxMainBg' : devaxMainBg,
 };
 

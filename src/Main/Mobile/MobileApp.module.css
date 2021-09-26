@@ -2,8 +2,10 @@
     font-size: 5vw;
     display: flex;
     top: 0;
-    padding: 0 7vw;
+    /*padding: 0 7vw;*/
     bottom: 0;
     position: absolute;
     font-family: Calibri , serif !important;
+
+    background: linear-gradient(164.28deg, #210EA2 -20.7%, #030091 31.95%, #DA570E 127.93%);
 }

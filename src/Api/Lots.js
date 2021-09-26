@@ -22,3 +22,5 @@ export const getLots = async () => {
     })
 
 }
+
+

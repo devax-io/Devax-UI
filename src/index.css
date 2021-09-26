@@ -264,6 +264,9 @@ html,body{
 .mb-3{
   margin-bottom: 3vh;
 }
+.mb-7{
+  margin-bottom: 7vh;
+}
 .mb-2{
   margin-bottom: 2vh;
 }
@@ -315,6 +318,10 @@ html,body{
 .py-3{
   padding-top: 3vh;
   padding-bottom: 3vh;
+}
+.py-7{
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 .px-05{
   padding-right: 0.5vw;
@@ -477,6 +484,10 @@ table th {
   padding: 1.3vh 0;
 }
 
+a{
+  text-decoration: none;
+  color: #dedcdc;
+}
 
 /*scrollbar component css*/
 .hide-scrollBar::-webkit-scrollbar {

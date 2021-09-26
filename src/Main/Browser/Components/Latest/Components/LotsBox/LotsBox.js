@@ -12,8 +12,7 @@ const LotsBox = (props) => {
     const {data , setLot , active} = props
 
     return (
-            <div className={`container ${classes.container} jc-center  font-size-sm column my-2 py-1`}>
-
+            <div className={`container ${classes.container} jc-center  font-size-sm column`}>
                 <div className={`row`}>
                     <div className={`${classes.icon} flex jc-center ai-center`}>
                         <img src={images.cube} alt="cube"/>

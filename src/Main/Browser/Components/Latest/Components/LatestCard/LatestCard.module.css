@@ -4,11 +4,12 @@
     /*background-color: #1ee406;*/
     border-radius: 8px;
     border: 1px dotted #bdbdc4;
+    background-color: #dadada;
 }
 .header{
     height: 13%;
     /*background-color: var(--nilBlue);*/
-    background-color: #cb2026;
+    background-color: #003675;
     border-radius: 8px 8px 0 0;
     color: #ffffff;
 }
@@ -26,7 +27,7 @@
 
 .thisButton {
     width: 98%;
-    background: #e7eaf3;
-    /*color: #eaeaea;*/
+    background: #003675;
+    color: #eaeaea;
     bottom: 0;
 }
