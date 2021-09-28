@@ -1,11 +1,14 @@
 .container{
-    font-size: 5vw;
+    font-size: 3.4vw;
     display: flex;
     top: 0;
     /*padding: 0 7vw;*/
     bottom: 0;
     position: absolute;
-    font-family: Calibri , serif !important;
-
-    background: linear-gradient(164.28deg, #210EA2 -20.7%, #030091 31.95%, #DA570E 127.93%);
+    font-family: 'Roboto', sans-serif;
+    background-repeat: repeat;
+    background-position: center center;
+    /*background-size: 600px 1200px;*/
+    background-size: cover;
+    /*background-color: var(--mainContent);*/
 }

@@ -19,6 +19,13 @@ import devaxfill from "./images-src/devaxfill.svg";
 import devaxbgg from "./images-src/devaxbgg.png";
 import devaxMainBg from "./images-src/devaxMainBg.png";
 
+
+import destroyingCoronavirus from "./images-src/destroyingCoronavirus.svg";
+import devaxLogoMob from "./images-src/devaxLogoMob.svg";
+import devaxLogoWeb from "./images-src/devaxLogoWeb.svg";
+import mainBgMob from "./images-src/mainBgMob.png";
+import mainBgWeb from "./images-src/mainBgWeb.png";
+
 export const  images = {
     'landing_lightning' : landing_lightning,
     'vax' : vax,
@@ -40,5 +47,11 @@ export const  images = {
     'devaxfill' : devaxfill,
     'devaxbgg' : devaxbgg,
     'devaxMainBg' : devaxMainBg,
+
+    'destroyingCoronavirus' : destroyingCoronavirus,
+    'devaxLogoMob' : devaxLogoMob,
+    'devaxLogoWeb' : devaxLogoWeb,
+    'mainBgMob' : mainBgMob,
+    'mainBgWeb' : mainBgWeb,
 };
 

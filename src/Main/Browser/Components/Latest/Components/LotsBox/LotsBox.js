@@ -12,7 +12,7 @@ const LotsBox = (props) => {
     const {data , setLot , active} = props
 
     return (
-            <div className={`container ${classes.container} jc-center  font-size-sm column`}>
+            <div className={`container ${classes.container} jc-center  font-size-sm column`} style={{backgroundColor: (active && active.refId === data.refId ) ? "#bfdcb475" : ""}}>
                 <div className={`row`}>
                     <div className={`${classes.icon} flex jc-center ai-center`}>
                         <img src={images.cube} alt="cube"/>
@@ -58,10 +58,21 @@ const LotsBox = (props) => {
 
 
                 {active && active.refId === data.refId  ?
-                    <div className={`${classes.navbar} column px-2 py-1`}>
-                        <span>pod : {moment.unix(data.pod).format("YY/MM/DD , HH:mm:ss")}</span>
-                        <span>exp : {moment.unix(data.exp).format("YY/MM/DD , HH:mm:ss")}</span>
-                    </div>:""
+
+
+                    <div className={`${classes.navbar} row jc-around ai-center px-2 py-1`}>
+                        <div className={`column`}>
+                            <span>pod : {moment.unix(data.pod).format("YY/MM/DD , HH:mm:ss")}</span>
+                            <span>exp : {moment.unix(data.exp).format("YY/MM/DD , HH:mm:ss")}</span>
+                        </div>
+
+                        <img style={{width:"6vw"}} src={data.manufactureImage} alt=""/>
+
+                    </div>
+
+
+
+                    :""
 
                 }
 

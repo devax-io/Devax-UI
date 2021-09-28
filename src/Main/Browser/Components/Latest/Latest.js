@@ -37,6 +37,7 @@ const Latest = (props) => {
         if(!lots || lots.status !== 200) return false
         return lots.data.data.map((lot => {
             lot.manufactureName = manufacture.data.data.find((m) => m.id === lot.manufacture)?.name
+            lot.manufactureImage = manufacture.data.data.find((m) => m.id === lot.manufacture)?.moreInfo
             return lot
         }))
     }
@@ -49,7 +50,7 @@ const Latest = (props) => {
 
 
     const getVialsHandler = async (lot) => {
-
+        setTransactionOfVialData(null)
         setVialsOfLotsData([]);
         setSelectedLot(lot)
         const vials = await getVialsOfSpecificLot(lot.manufacture , lot.refId)
