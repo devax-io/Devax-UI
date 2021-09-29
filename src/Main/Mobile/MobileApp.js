@@ -12,7 +12,6 @@ const MobileApp = (props) => {
         <div className={`container ${classes.container} column px-5 py-2`} style={{backgroundImage: `url("${images.mainBgMob}")`}}>
             <Header/>
             <Body/>
-
         </div>
     );
 };

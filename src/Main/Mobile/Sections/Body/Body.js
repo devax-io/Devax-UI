@@ -6,7 +6,7 @@ import * as Routes from "../../../../Routes/Routes";
 import ScrollBar from "../../../../Components/ScrollBar";
 import Overview from "../../Components/Overview/Overview";
 import Home from "../../Pages/Home/Home";
-import Explorer from "../../Pages/Explorer/Explorer";
+import ExplorerPage from "../../Pages/ExplorerPage/ExplorerPage";
 
 
 
@@ -21,8 +21,9 @@ const Body = (props) => {
                         <Home/>
                     </Route>
                     <Route exact path={Routes.Explorer}>
-                        <Explorer/>
+                        <ExplorerPage/>
                     </Route>
+
 
                     <Route path="*">
                         <Redirect

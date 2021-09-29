@@ -1,16 +1,14 @@
 import React, {Fragment, useEffect, useState} from "react";
-import classes from "./Latest.module.css";
-import LotsStep from "./Components/LotsStep/LotsStep";
+import classes from "./VialsStep.module.css";
+import {images} from "../../../../assets/images/images";
 
 
 
-const Latest = (props) => {
+const VialsStep = (props) => {
 
 
     return (
         <div className={`container ${classes.container} flex jc-center ai-center`}>
-
-            <LotsStep/>
 
 
 
@@ -19,4 +17,4 @@ const Latest = (props) => {
     );
 };
 
-export default Latest;
+export default VialsStep;
