@@ -2,13 +2,10 @@
     font-size: 3.4vw;
     display: flex;
     top: 0;
-    /*padding: 0 7vw;*/
     bottom: 0;
     position: absolute;
     font-family: 'Roboto', sans-serif;
     background-repeat: repeat;
     background-position: center center;
-    /*background-size: 600px 1200px;*/
     background-size: cover;
-    /*background-color: var(--mainContent);*/
 }

@@ -1,14 +1,12 @@
-    import React, {Fragment, useEffect, useState} from "react";
+    import React, {useState} from "react";
     import classes from "./Explorer.module.css";
     import TextInput from "../../../../Components/TextInput/TextInput";
     import Icon from "../../../../Components/Icon/Icon";
-    import {images} from "../../../../assets/images/images";
 
 
 
     const Explorer = (props) => {
         const [explorer, setExplorer] = useState("");
-
 
         return (
             <div className={`container row jc-between ai-center my-5 px-7`}>
@@ -23,8 +21,6 @@
                         after={<Icon iconName="icon-search font-size-sm"/>}
                     />
                 </div>
-
-                {/*<img className={`${classes.thisImage}`} src={images.devaxExp} alt="vax"/>*/}
             </div>
         );
     };

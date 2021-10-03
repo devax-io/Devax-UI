@@ -1,0 +1,8 @@
+.container{
+    height: 100%;
+    color: #ffffffd1;
+}
+.thisImage{
+    width: 15.5vw;
+    filter: invert(40%) sepia(61%) saturate(743%) hue-rotate(167deg) brightness(89%) contrast(90%);
+}

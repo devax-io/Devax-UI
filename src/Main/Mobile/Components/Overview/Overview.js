@@ -1,14 +1,12 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import classes from "./Overview.module.css";
 import {images} from "../../../../assets/images/images";
-
 import {getGeneral} from "../../../../Api/General";
 import Card from "./Components/Card/Card";
 
-
-
-
 const Overview = (props) => {
+
+    const [loading , setLoading] = useState([])
     const [general , setGeneral] = useState({
 
         "totalLots": 0,
@@ -18,8 +16,6 @@ const Overview = (props) => {
         "totalTransactions": 0
 
     })
-    const [loading , setLoading] = useState([])
-
 
     const getData = async ()=> {
         const datas = await getGeneral()
@@ -32,8 +28,6 @@ const Overview = (props) => {
             if(general) setGeneral(general)
         } )
     }, []);
-
-
 
     return (
         <div className={`container  flex jc-center ai-center ${classes.container}`}>

@@ -1,6 +1,5 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React from "react";
 import classes from "./Card.module.css";
-import {images} from "../../../../../../assets/images/images";
 
 
 
@@ -12,8 +11,6 @@ const Card = (props) => {
             <img className={`my-2`} style={{width:"5vw"}} src={icon} alt="title"/>
             <span className={`font-weight-bold`}>{title}</span>
             <span className={` font-size-sm text-color-gray`}>{amount}</span>
-
-
         </div>
     );
 };

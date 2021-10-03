@@ -1,16 +1,13 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import classes from "./Overview.module.css";
 import Card from "./Components/Card/Card";
 import {images} from "../../../../assets/images/images";
 import {getGeneral} from "../../../../Api/General";
 
 
-
-
 const Overview = (props) => {
 
     const [general , setGeneral] = useState({
-
         "totalLots": 0,
         "totalVials": 0,
         "totalInjections": 0,
@@ -35,10 +32,11 @@ const Overview = (props) => {
 
 
     return (
-        <div className={`container  flex jc-end ai-center ${classes.container} my-5 px-7 py-2`}>
-
-
-
+        <div className={`container  flex jc-between ai-center ${classes.container} my-5 px-7 py-2`}>
+            <div className={`${classes.imageBox} column jc-start ai-center py-7`}>
+                <img src={images.devaxLogoWeb} alt="devaxLogoWeb"/>
+                <img src={images.devaxfill} alt="devaxLogoWeb"/>
+            </div>
             <div className={`${classes.content} px-1 py-2`}>
                 <div className={`row`}>
                     <Card icon={images.vaccine} title="Total Bought Vac" amount={general.totalVials}/>

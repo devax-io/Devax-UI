@@ -1,0 +1,14 @@
+.container{
+    color: #ffffffd1;
+    border-bottom: 1px solid #2173b9;
+}
+.icon{
+    width: 20%;
+}
+.icon img{
+    filter: invert(40%) sepia(61%) saturate(743%) hue-rotate(167deg) brightness(89%) contrast(90%);
+    width: 10vw;
+}
+.content{
+    width: 80%;
+}

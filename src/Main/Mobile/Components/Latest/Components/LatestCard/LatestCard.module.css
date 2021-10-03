@@ -1,0 +1,28 @@
+.container{
+    height: 96%;
+    border-radius: 8px;
+    border: 2px solid #2173b9;
+}
+.header{
+    height: 8%;
+    background-color: #2173b9;
+    border-radius: 6px 6px 0 0;
+    color: #ffffff;
+    font-size: 3.8vw;
+}
+.content{
+    height: 84.5%;
+}
+.footer{
+    height: 7.5%;
+    border-radius: 0 0 6px 6px;
+   /* border-top: 1px solid #2173b9;*/
+    /*background-color: #2173b9;*/
+}
+.thisButton {
+    width: 96%;
+    background: #911c18;
+    color: #f1ecec;
+    bottom: 0;
+    font-size: 3.5vw;
+}

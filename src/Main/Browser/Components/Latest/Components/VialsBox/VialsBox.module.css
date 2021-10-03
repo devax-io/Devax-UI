@@ -1,28 +1,21 @@
 .container{
-    background-color: #fbf8f6cc;
-    /* width: 90%;*/
-    border-bottom: 1px solid;
-    height: 10vh;
-   /* border-radius: 4px;*/
-}
-.container:first-child{
-    margin-top: 0 !important;
+    border-bottom: 1px solid #2173b9;
+    color: #ffffffd1;
 }
 .icon{
     width: 20%;
-    /*background-color: #ff8124;*/
 }
 .icon img{
+    filter: invert(40%) sepia(61%) saturate(743%) hue-rotate(167deg) brightness(89%) contrast(90%);
     width: 1.7vw;
 }
 .content{
     width: 80%;
-    /*background-color: #1ee406;*/
 }
 .thisButton{
     height: 5vh;
     padding: 0 1.5vw;
-    background-color: rgb(0 0 0 / 93%);
+    background-color: #2173b98a;
     color: #fbfeff;
     border-radius: 55px;
 }

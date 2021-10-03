@@ -1,10 +1,8 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React from "react";
 import classes from "./Card.module.css";
-import {images} from "../../../../../../assets/images/images";
-
-
 
 const Card = (props) => {
+
     const {icon , title , amount} = props
 
     return (

@@ -13,14 +13,6 @@ const Explorer = (props) => {
         select:"",
     });
 
-    const [personalization, setPersonalization] = useState({
-        defaultLanguage: "",
-        defaultTheme: "",
-        calendarSystem: "",
-        timeZone: "",
-        referenceCurrency: "",
-        referenceCryptoCurrency: "",
-    });
 
     const Options = [
         {value: "persian", label: "فارسی"},
@@ -29,8 +21,6 @@ const Explorer = (props) => {
     ];
 
     return (
-
-
         <div className={`container row jc-between ai-center`}>
             <TextInput
                 select={true}
@@ -50,7 +40,6 @@ const Explorer = (props) => {
                 after={<Icon iconName="icon-search font-size-md-mb"/>}
             />
         </div>
-
     );
 };
 

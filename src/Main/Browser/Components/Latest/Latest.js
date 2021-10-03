@@ -6,8 +6,6 @@ import VialsBox from "./Components/VialsBox/VialsBox";
 import {getLots} from "../../../../Api/Lots";
 import {getManufacture} from "../../../../Api/Manufacture";
 import {getVialsOfSpecificLot} from "../../../../Api/VialsOfSpecificLot";
-import moment from "moment";
-import {getSpecificAccount} from "../../../../Api/SpecificAccount";
 import TransactionsBox from "./Components/TransactionsBox/TransactionsBox";
 import {getTransactionsOfVial} from "../../../../Api/TransactionsOfVial";
 import {getAccount} from "../../../../Api/Accounts";
@@ -16,18 +14,13 @@ import Empty from "./Components/Empty/Empty";
 
 const Latest = (props) => {
 
-
-    const [accountData , setAccountData] = useState([])
     const [lotsData , setLotsData] = useState([])
     const [vialsOfLotsData , setVialsOfLotsData] = useState(null)
     const [loading , setLoading] = useState([])
     const [error , setError] = useState([])
     const [selectedLot , setSelectedLot] = useState(null)
-
-
     const [transactionOfVialData , setTransactionOfVialData] = useState(null)
     const [selectedVial , setSelectedVial] = useState(null)
-
 
 
     const getData = async ()=> {
@@ -44,10 +37,7 @@ const Latest = (props) => {
 
     useEffect(() => {
         getData().then((lots)=>setLotsData(lots))
-
-
     }, []);
-
 
     const getVialsHandler = async (lot) => {
         setTransactionOfVialData(null)
@@ -56,18 +46,12 @@ const Latest = (props) => {
         const vials = await getVialsOfSpecificLot(lot.manufacture , lot.refId)
         if(!vials || vials.status !== 200) return false
         setVialsOfLotsData(vials.data.data)
-
     }
 
-
     const getTransactions = async (vial)=> {
-
         setSelectedVial(vial)
-
         const accounts = await getAccount()
         if(!accounts || accounts.status !== 200) return false
-
-
         const transactions = await getTransactionsOfVial(vial.id , vial.refId)
         if(!transactions || transactions.status !== 200) return false
         const Txs = transactions.data.data.map((tx => {
@@ -127,17 +111,6 @@ const Latest = (props) => {
                      ""
                     }
                 </div>
-                {/*<div className={`container row jc-between ai-center mt-3`}>
-                    <div className={`col-32`}>
-                        <LatestCard title="Latest Transfer"/>
-                    </div>
-                    <div className={`col-32`}>
-                        <LatestCard title="Latest Injection"/>
-                    </div>
-                    <div className={`col-32`}>
-                        <LatestCard title="Latest Affirmation"/>
-                    </div>
-                </div>*/}
             </div>
 
         </div>

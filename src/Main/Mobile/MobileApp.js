@@ -1,10 +1,8 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React from "react";
 import classes from "./MobileApp.module.css";
 import Header from "./Sections/Header/Header";
 import Body from "./Sections/Body/Body";
 import {images} from "../../assets/images/images";
-
-
 
 const MobileApp = (props) => {
 

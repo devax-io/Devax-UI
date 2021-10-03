@@ -1,21 +1,14 @@
 .container{
-    background-color: #fbf8f6cc;
-    /* width: 90%;*/
-    height: 10vh;
-    border-bottom: 1px solid;
-    /*border-radius: 4px;*/
-}
-.container:first-child{
-    margin-top: 0 !important;
+    color: #ffffffd1;
+    border-bottom: 1px solid #2173b9;
 }
 .icon{
     width: 20%;
-    /*background-color: #ff8124;*/
 }
 .icon img{
+    filter: invert(40%) sepia(61%) saturate(743%) hue-rotate(167deg) brightness(89%) contrast(90%);
     width: 3vw;
 }
 .content{
     width: 80%;
-    /*background-color: #1ee406;*/
 }

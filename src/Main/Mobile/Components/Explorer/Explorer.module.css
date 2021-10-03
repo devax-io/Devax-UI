@@ -1,14 +1,6 @@
 .searchInput{
     width: 60vw;
-    /*background-color: #1ee406;*/
-    /*box-shadow: -1px 1px 11px 0px #c7c7c7, 1px -5px 11px 0px #e0e0e0;*/
 }
-.searchInput :global(.inputGroup){
-    /*
-    height: 10vh!important;
-    */
-}
-
 .searchInput :global(.after){
     width: 25% !important;
     border-radius: 0 2px 2px 0 !important;
@@ -20,10 +12,7 @@
     padding: 0 1vw !important;
     background-color: #ffffff !important;
     font-size: 3.5vw!important;
-    font-family: 'Roboto', sans-serif;
-
 }
-
 .selectInput :global .selectBox{
     font-size: 3.5vw !important;
 }

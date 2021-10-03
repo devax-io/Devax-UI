@@ -20,46 +20,37 @@
   --red: #d73e36;
   --gray: #949494;
   --lightGray: #ffffff8a;
-
   --nilBlue: #1d47f9;
   --mediumpurple: #0f49dc3b;
-
-
 }
 
 html,body{
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;*/
-
   width: 100%;
   height: 100%;
   font-weight: 400;
-  font-size: 1.3vw;
+  font-size: 1.15vw;
   line-height: 4.5vh;
   -webkit-box-sizing: border-box;
   direction: ltr;
-  /*color: #e5e5e5;*/
-  /*overflow-x: hidden;*/
-  /*color: var(--white);*/
 }
 
 .font-size-sm-mini{
-  font-size: 1.15vw;
+  font-size: 0.9vw;
 }
 .font-size-sm{
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 .font-size-md{
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 .font-size-sm-mini-mb{
-  font-size: 2.7vw;
+  font-size: 3.2vw;
 }
 .font-size-sm-mb{
-  font-size: 2.8vw;
+  font-size: 4vw;
 }
 .font-size-md-mb{
   font-size: 3.5vw;
@@ -264,8 +255,6 @@ html,body{
   flex: 1;
 }
 
-
-
 .mb-05{
   margin-bottom: 0.5vh
 }
@@ -281,6 +270,75 @@ html,body{
 .mb-2{
   margin-bottom: 2vh;
 }
+.ml-05{
+  margin-left: 0.5vw;
+}
+.mr-05{
+  margin-right: 0.5vw;
+}
+.mr-1{
+  margin-right: 1vw;
+}
+.mr-025{
+  margin-right: 0.25vw;
+}
+.mt-05{
+  margin-top: 0.5vh;
+}
+.mt-1{
+  margin-top: 1vh;
+}
+.mt-2{
+  margin-top: 2vh;
+}
+.mt-3{
+  margin-top: 3vh;
+}
+.mx-05{
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+}
+.mx-025{
+  margin-right: 0.25vw;
+  margin-left: 0.25vw;
+}
+.mx-1{
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+.mx-7{
+  margin-right: 7vw;
+  margin-left: 7vw;
+}
+.my-2{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.my-3{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.my-4{
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+.my-5{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.my-10{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.my-1{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.my-05{
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
 .p-1{
   padding: 1vh 1vw;
 }
@@ -359,18 +417,6 @@ html,body{
 .pr-2{
   padding-right: 2vw;
 }
-.ml-05{
-  margin-left: 0.5vw;
-}
-.mr-05{
-  margin-right: 0.5vw;
-}
-.mr-1{
-  margin-right: 1vw;
-}
-.mr-025{
-  margin-right: 0.25vw;
-}
 .pl-05{
   padding-left: 0.5vw;
 }
@@ -392,63 +438,10 @@ html,body{
 .pb-2{
   padding-bottom: 2vh;
 }
-.mt-05{
-  margin-top: 0.5vh;
-}
-.mt-1{
-  margin-top: 1vh;
-}
-.mt-2{
-  margin-top: 2vh;
-}
-.mt-3{
-  margin-top: 3vh;
-}
-.mx-05{
-  margin-right: 0.5vw;
-  margin-left: 0.5vw;
-}
-.mx-025{
-  margin-right: 0.25vw;
-  margin-left: 0.25vw;
-}
-.mx-1{
-  margin-right: 1vw;
-  margin-left: 1vw;
-}
-.mx-7{
-  margin-right: 7vw;
-  margin-left: 7vw;
-}
-.my-2{
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-.my-3{
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-}
-.my-4{
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-}
-.my-5{
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-.my-1{
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-.my-05{
-  margin-top: 0.5vh;
-  margin-bottom: 0.5vh;
-}
 
 .text-center{
   text-align: center;
 }
-
 
 table {
   width: 100%;
@@ -458,14 +451,12 @@ tr {
   position: relative;
   line-height: 5vh;
 }
-
 .striped tr:nth-child(even) td {
   background-color: var(--lightGray);
   -webkit-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
-
 table th {
   position: -webkit-sticky;
   position: sticky;
@@ -475,12 +466,10 @@ table th {
   background-color: var(--mediumpurple);
   line-height: 5.5vh;
 }
-
 .th-border-y th {
   border-top: 0.1vh solid var(--mediumpurple);
   border-bottom: 0.1vh solid var(--mediumpurple);
 }
-
 
 .hover-text:hover {
   color: var(--activeText);
@@ -500,9 +489,8 @@ table th {
 .button{
   border: none;
   border-radius: 5px;
-  font-family: Calibri , serif !important;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.1vw;
-  /*color: #f2f2f2;*/
   cursor: pointer;
   padding: 1.3vh 0;
 }
@@ -520,7 +508,6 @@ a{
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .scrollView::-webkit-scrollbar {
   display: none;
 }
@@ -530,11 +517,8 @@ a{
   margin: 0 !important;
 }
 
-
-
 .container{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  /*background-color: #8b008b36;*/
 }
